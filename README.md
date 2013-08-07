@@ -7,6 +7,11 @@ Uses the artwork of the song currently playing in Spotify to change the color of
   <img src="icon.png" alt="App Icon"/>
 </p>
 
+Download
+===
+
+You can clone the repository and build ColoredTunes yourself or you can simply [grab the latest version on the releases page](https://github.com/simonbs/ColoredTunes/releases).
+
 Usage
 ===
 
