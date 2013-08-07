@@ -7,13 +7,11 @@ Uses the artwork of the song currently playing in Spotify to change the color of
   <img src="icon.png" alt="App Icon"/>
 </p>
 
-Download
-===
+## Download
 
 You can clone the repository and build ColoredTunes yourself or you can simply [grab the latest version on the releases page](https://github.com/simonbs/ColoredTunes/releases).
 
-Usage
-===
+## Usage
 
 When you have start up ColoredTunes for the first time, it will show you the preferences. You will have to connect to your Philips Hue bridge. This is done by pressing "Search for bridge". ColoredTunes should take care of the rest. You might have to press the button on your bridge, though, but the app will tell you so if necessary.
 
