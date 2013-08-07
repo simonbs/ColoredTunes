@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72124AC017B213DC003F69BE /* LightsPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72124ABF17B213DC003F69BE /* LightsPreferencesViewController.m */; };
+		72124AC317B213EB003F69BE /* LightsPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72124AC117B213EB003F69BE /* LightsPreferencesView.xib */; };
+		72124ACB17B218D9003F69BE /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72124ACA17B218D9003F69BE /* LightCell.m */; };
+		726C4EB617B2BA5100ACE318 /* Icons.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 726C4EB317B2BA5100ACE318 /* Icons.iconset */; };
+		726C4EB717B2BA5100ACE318 /* StatusBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 726C4EB417B2BA5100ACE318 /* StatusBarIcon.png */; };
+		726C4EB817B2BA5100ACE318 /* StatusBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726C4EB517B2BA5100ACE318 /* StatusBarIcon@2x.png */; };
+		726C4EBB17B2BD1100ACE318 /* StatusBarIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 726C4EB917B2BD1100ACE318 /* StatusBarIconHighlighted.png */; };
+		726C4EBC17B2BD1100ACE318 /* StatusBarIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726C4EBA17B2BD1100ACE318 /* StatusBarIconHighlighted@2x.png */; };
+		7280E81417B14AF200E5D75E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7280E81317B14AF200E5D75E /* Cocoa.framework */; };
+		7280E81E17B14AF200E5D75E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7280E81C17B14AF200E5D75E /* InfoPlist.strings */; };
+		7280E82017B14AF200E5D75E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E81F17B14AF200E5D75E /* main.m */; };
+		7280E82417B14AF200E5D75E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7280E82217B14AF200E5D75E /* Credits.rtf */; };
+		7280E82A17B14AF200E5D75E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7280E82817B14AF200E5D75E /* MainMenu.xib */; };
+		7280E83417B14B3000E5D75E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E83317B14B3000E5D75E /* AppDelegate.m */; };
+		7280E84717B14C1A00E5D75E /* DPHue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E83A17B14C1A00E5D75E /* DPHue.m */; };
+		7280E84817B14C1A00E5D75E /* DPHueDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E83C17B14C1A00E5D75E /* DPHueDiscover.m */; };
+		7280E84917B14C1A00E5D75E /* DPHueLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E83E17B14C1A00E5D75E /* DPHueLight.m */; };
+		7280E84A17B14C1A00E5D75E /* DPHueNUPNP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E84017B14C1A00E5D75E /* DPHueNUPNP.m */; };
+		7280E84B17B14C1A00E5D75E /* DPJSONConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E84217B14C1A00E5D75E /* DPJSONConnection.m */; };
+		7280E84C17B14C1A00E5D75E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E84517B14C1A00E5D75E /* NSString+MD5.m */; };
+		7280E85017B14DEA00E5D75E /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E84F17B14DEA00E5D75E /* PreferencesWindowController.m */; };
+		7280E85317B14E1F00E5D75E /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7280E85117B14E1F00E5D75E /* PreferencesWindow.xib */; };
+		7280E85A17B1551D00E5D75E /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7280E85717B1551D00E5D75E /* MASPreferencesWindow.xib */; };
+		7280E85B17B1551D00E5D75E /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E85917B1551D00E5D75E /* MASPreferencesWindowController.m */; };
+		7280E85E17B1557800E5D75E /* ConnectPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E85D17B1557800E5D75E /* ConnectPreferencesViewController.m */; };
+		7280E86117B1560B00E5D75E /* ConnectPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7280E85F17B1560B00E5D75E /* ConnectPreferencesView.xib */; };
+		7280E86717B1610200E5D75E /* GVUserDefaults+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280E86617B1610200E5D75E /* GVUserDefaults+Settings.m */; };
+		72CDEEA217B16B18006EC2DE /* ColorCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CDEEA117B16B18006EC2DE /* ColorCalculator.m */; };
+		72CDEEA417B16F80006EC2DE /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CDEEA317B16F80006EC2DE /* ScriptingBridge.framework */; };
+		72CDEEA917B170EA006EC2DE /* LoadArtworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CDEEA817B170EA006EC2DE /* LoadArtworkOperation.m */; };
+		72CDEEAD17B17102006EC2DE /* SLColorArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CDEEAC17B17102006EC2DE /* SLColorArt.m */; };
+		AB02603B9A754AC28687920E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DF5D1F43B46D29F269440 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4856F6AEA51E40FD8B892375 /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4A0DF5D1F43B46D29F269440 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72124ABE17B213DB003F69BE /* LightsPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsPreferencesViewController.h; sourceTree = "<group>"; };
+		72124ABF17B213DC003F69BE /* LightsPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsPreferencesViewController.m; sourceTree = "<group>"; };
+		72124AC217B213EB003F69BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LightsPreferencesView.xib; sourceTree = "<group>"; };
+		72124AC917B218D9003F69BE /* LightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightCell.h; path = Source/Views/LightCell.h; sourceTree = "<group>"; };
+		72124ACA17B218D9003F69BE /* LightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightCell.m; path = Source/Views/LightCell.m; sourceTree = "<group>"; };
+		726C4EB317B2BA5100ACE318 /* Icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icons.iconset; sourceTree = "<group>"; };
+		726C4EB417B2BA5100ACE318 /* StatusBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarIcon.png; sourceTree = "<group>"; };
+		726C4EB517B2BA5100ACE318 /* StatusBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusBarIcon@2x.png"; sourceTree = "<group>"; };
+		726C4EB917B2BD1100ACE318 /* StatusBarIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarIconHighlighted.png; sourceTree = "<group>"; };
+		726C4EBA17B2BD1100ACE318 /* StatusBarIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusBarIconHighlighted@2x.png"; sourceTree = "<group>"; };
+		726C4EBD17B2BF1F00ACE318 /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		7280E81017B14AF200E5D75E /* ColoredTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoredTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7280E81317B14AF200E5D75E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7280E81617B14AF200E5D75E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7280E81717B14AF200E5D75E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7280E81817B14AF200E5D75E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7280E81B17B14AF200E5D75E /* ColoredTunes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColoredTunes-Info.plist"; sourceTree = "<group>"; };
+		7280E81D17B14AF200E5D75E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7280E81F17B14AF200E5D75E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7280E82117B14AF200E5D75E /* ColoredTunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColoredTunes-Prefix.pch"; sourceTree = "<group>"; };
+		7280E82317B14AF200E5D75E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7280E82917B14AF200E5D75E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7280E83217B14B3000E5D75E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7280E83317B14B3000E5D75E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7280E83917B14C1A00E5D75E /* DPHue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHue.h; sourceTree = "<group>"; };
+		7280E83A17B14C1A00E5D75E /* DPHue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHue.m; sourceTree = "<group>"; };
+		7280E83B17B14C1A00E5D75E /* DPHueDiscover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHueDiscover.h; sourceTree = "<group>"; };
+		7280E83C17B14C1A00E5D75E /* DPHueDiscover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHueDiscover.m; sourceTree = "<group>"; };
+		7280E83D17B14C1A00E5D75E /* DPHueLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHueLight.h; sourceTree = "<group>"; };
+		7280E83E17B14C1A00E5D75E /* DPHueLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHueLight.m; sourceTree = "<group>"; };
+		7280E83F17B14C1A00E5D75E /* DPHueNUPNP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHueNUPNP.h; sourceTree = "<group>"; };
+		7280E84017B14C1A00E5D75E /* DPHueNUPNP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHueNUPNP.m; sourceTree = "<group>"; };
+		7280E84117B14C1A00E5D75E /* DPJSONConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPJSONConnection.h; sourceTree = "<group>"; };
+		7280E84217B14C1A00E5D75E /* DPJSONConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPJSONConnection.m; sourceTree = "<group>"; };
+		7280E84317B14C1A00E5D75E /* DPJSONSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPJSONSerializable.h; sourceTree = "<group>"; };
+		7280E84417B14C1A00E5D75E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		7280E84517B14C1A00E5D75E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		7280E84617B14C1A00E5D75E /* WSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLog.h; sourceTree = "<group>"; };
+		7280E84E17B14DEA00E5D75E /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		7280E84F17B14DEA00E5D75E /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		7280E85217B14E1F00E5D75E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		7280E85617B1551D00E5D75E /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
+		7280E85717B1551D00E5D75E /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		7280E85817B1551D00E5D75E /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		7280E85917B1551D00E5D75E /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		7280E85C17B1557800E5D75E /* ConnectPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectPreferencesViewController.h; sourceTree = "<group>"; };
+		7280E85D17B1557800E5D75E /* ConnectPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectPreferencesViewController.m; sourceTree = "<group>"; };
+		7280E86017B1560B00E5D75E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConnectPreferencesView.xib; sourceTree = "<group>"; };
+		7280E86517B1610200E5D75E /* GVUserDefaults+Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+Settings.h"; sourceTree = "<group>"; };
+		7280E86617B1610200E5D75E /* GVUserDefaults+Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+Settings.m"; sourceTree = "<group>"; };
+		7280E86817B166A900E5D75E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		72CDEEA017B16B18006EC2DE /* ColorCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCalculator.h; sourceTree = "<group>"; };
+		72CDEEA117B16B18006EC2DE /* ColorCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCalculator.m; sourceTree = "<group>"; };
+		72CDEEA317B16F80006EC2DE /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		72CDEEA617B16FC2006EC2DE /* SpotifyClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyClient.h; sourceTree = "<group>"; };
+		72CDEEA717B170E9006EC2DE /* LoadArtworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadArtworkOperation.h; sourceTree = "<group>"; };
+		72CDEEA817B170EA006EC2DE /* LoadArtworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadArtworkOperation.m; sourceTree = "<group>"; };
+		72CDEEAB17B17102006EC2DE /* SLColorArt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLColorArt.h; sourceTree = "<group>"; };
+		72CDEEAC17B17102006EC2DE /* SLColorArt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLColorArt.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7280E80D17B14AF200E5D75E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72CDEEA417B16F80006EC2DE /* ScriptingBridge.framework in Frameworks */,
+				7280E81417B14AF200E5D75E /* Cocoa.framework in Frameworks */,
+				AB02603B9A754AC28687920E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		726C4EB117B2BA5100ACE318 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				726C4EB217B2BA5100ACE318 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		726C4EB217B2BA5100ACE318 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				726C4EB317B2BA5100ACE318 /* Icons.iconset */,
+				726C4EB417B2BA5100ACE318 /* StatusBarIcon.png */,
+				726C4EB517B2BA5100ACE318 /* StatusBarIcon@2x.png */,
+				726C4EB917B2BD1100ACE318 /* StatusBarIconHighlighted.png */,
+				726C4EBA17B2BD1100ACE318 /* StatusBarIconHighlighted@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7280E80717B14AF200E5D75E = {
+			isa = PBXGroup;
+			children = (
+				7280E81917B14AF200E5D75E /* ColoredTunes */,
+				7280E81217B14AF200E5D75E /* Frameworks */,
+				7280E81117B14AF200E5D75E /* Products */,
+				4856F6AEA51E40FD8B892375 /* Pods/Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		7280E81117B14AF200E5D75E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7280E81017B14AF200E5D75E /* ColoredTunes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7280E81217B14AF200E5D75E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72CDEEA317B16F80006EC2DE /* ScriptingBridge.framework */,
+				7280E81317B14AF200E5D75E /* Cocoa.framework */,
+				7280E81517B14AF200E5D75E /* Other Frameworks */,
+				4A0DF5D1F43B46D29F269440 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7280E81517B14AF200E5D75E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7280E81617B14AF200E5D75E /* AppKit.framework */,
+				7280E81717B14AF200E5D75E /* CoreData.framework */,
+				7280E81817B14AF200E5D75E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7280E81917B14AF200E5D75E /* ColoredTunes */ = {
+			isa = PBXGroup;
+			children = (
+				7280E83717B14C1A00E5D75E /* Third Party */,
+				726C4EB117B2BA5100ACE318 /* Resources */,
+				7280E83017B14B3000E5D75E /* Source */,
+				7280E81A17B14AF200E5D75E /* Supporting Files */,
+			);
+			path = ColoredTunes;
+			sourceTree = "<group>";
+		};
+		7280E81A17B14AF200E5D75E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7280E81B17B14AF200E5D75E /* ColoredTunes-Info.plist */,
+				7280E81C17B14AF200E5D75E /* InfoPlist.strings */,
+				7280E81F17B14AF200E5D75E /* main.m */,
+				7280E82117B14AF200E5D75E /* ColoredTunes-Prefix.pch */,
+				7280E82217B14AF200E5D75E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7280E83017B14B3000E5D75E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7280E86817B166A900E5D75E /* Constants.h */,
+				72CDEEA617B16FC2006EC2DE /* SpotifyClient.h */,
+				726C4EBD17B2BF1F00ACE318 /* Notifications.h */,
+				7280E86417B160F200E5D75E /* Categories */,
+				7280E83117B14B3000E5D75E /* Controllers */,
+				72CDEE9F17B16B01006EC2DE /* Helpers */,
+				7280E83517B14B3200E5D75E /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7280E83117B14B3000E5D75E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7280E83217B14B3000E5D75E /* AppDelegate.h */,
+				7280E83317B14B3000E5D75E /* AppDelegate.m */,
+				7280E84E17B14DEA00E5D75E /* PreferencesWindowController.h */,
+				7280E84F17B14DEA00E5D75E /* PreferencesWindowController.m */,
+				7280E85C17B1557800E5D75E /* ConnectPreferencesViewController.h */,
+				7280E85D17B1557800E5D75E /* ConnectPreferencesViewController.m */,
+				72124ABE17B213DB003F69BE /* LightsPreferencesViewController.h */,
+				72124ABF17B213DC003F69BE /* LightsPreferencesViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7280E83517B14B3200E5D75E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7280E83617B14B3F00E5D75E /* XIBs */,
+				72124AC917B218D9003F69BE /* LightCell.h */,
+				72124ACA17B218D9003F69BE /* LightCell.m */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7280E83617B14B3F00E5D75E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				7280E82817B14AF200E5D75E /* MainMenu.xib */,
+				7280E85117B14E1F00E5D75E /* PreferencesWindow.xib */,
+				7280E85F17B1560B00E5D75E /* ConnectPreferencesView.xib */,
+				72124AC117B213EB003F69BE /* LightsPreferencesView.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		7280E83717B14C1A00E5D75E /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				72CDEEAA17B17102006EC2DE /* SLColorArt */,
+				7280E85517B1551D00E5D75E /* MASPreferences */,
+				7280E83817B14C1A00E5D75E /* DPHue */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		7280E83817B14C1A00E5D75E /* DPHue */ = {
+			isa = PBXGroup;
+			children = (
+				7280E83917B14C1A00E5D75E /* DPHue.h */,
+				7280E83A17B14C1A00E5D75E /* DPHue.m */,
+				7280E83B17B14C1A00E5D75E /* DPHueDiscover.h */,
+				7280E83C17B14C1A00E5D75E /* DPHueDiscover.m */,
+				7280E83D17B14C1A00E5D75E /* DPHueLight.h */,
+				7280E83E17B14C1A00E5D75E /* DPHueLight.m */,
+				7280E83F17B14C1A00E5D75E /* DPHueNUPNP.h */,
+				7280E84017B14C1A00E5D75E /* DPHueNUPNP.m */,
+				7280E84117B14C1A00E5D75E /* DPJSONConnection.h */,
+				7280E84217B14C1A00E5D75E /* DPJSONConnection.m */,
+				7280E84317B14C1A00E5D75E /* DPJSONSerializable.h */,
+				7280E84417B14C1A00E5D75E /* NSString+MD5.h */,
+				7280E84517B14C1A00E5D75E /* NSString+MD5.m */,
+				7280E84617B14C1A00E5D75E /* WSLog.h */,
+			);
+			path = DPHue;
+			sourceTree = "<group>";
+		};
+		7280E85517B1551D00E5D75E /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				7280E85617B1551D00E5D75E /* MASPreferencesViewController.h */,
+				7280E85717B1551D00E5D75E /* MASPreferencesWindow.xib */,
+				7280E85817B1551D00E5D75E /* MASPreferencesWindowController.h */,
+				7280E85917B1551D00E5D75E /* MASPreferencesWindowController.m */,
+			);
+			path = MASPreferences;
+			sourceTree = "<group>";
+		};
+		7280E86417B160F200E5D75E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7280E86517B1610200E5D75E /* GVUserDefaults+Settings.h */,
+				7280E86617B1610200E5D75E /* GVUserDefaults+Settings.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		72CDEE9F17B16B01006EC2DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72CDEEA717B170E9006EC2DE /* LoadArtworkOperation.h */,
+				72CDEEA817B170EA006EC2DE /* LoadArtworkOperation.m */,
+				72CDEEA017B16B18006EC2DE /* ColorCalculator.h */,
+				72CDEEA117B16B18006EC2DE /* ColorCalculator.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72CDEEAA17B17102006EC2DE /* SLColorArt */ = {
+			isa = PBXGroup;
+			children = (
+				72CDEEAB17B17102006EC2DE /* SLColorArt.h */,
+				72CDEEAC17B17102006EC2DE /* SLColorArt.m */,
+			);
+			path = SLColorArt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7280E80F17B14AF200E5D75E /* ColoredTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7280E82D17B14AF200E5D75E /* Build configuration list for PBXNativeTarget "ColoredTunes" */;
+			buildPhases = (
+				B7FF8CC28C0A41BAA493523C /* Check Pods Manifest.lock */,
+				7280E80C17B14AF200E5D75E /* Sources */,
+				7280E80D17B14AF200E5D75E /* Frameworks */,
+				7280E80E17B14AF200E5D75E /* Resources */,
+				7B4A0DECC66546A9A5EDC825 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColoredTunes;
+			productName = ColoredTunes;
+			productReference = 7280E81017B14AF200E5D75E /* ColoredTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7280E80817B14AF200E5D75E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = intuitaps;
+			};
+			buildConfigurationList = 7280E80B17B14AF200E5D75E /* Build configuration list for PBXProject "ColoredTunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7280E80717B14AF200E5D75E;
+			productRefGroup = 7280E81117B14AF200E5D75E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7280E80F17B14AF200E5D75E /* ColoredTunes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7280E80E17B14AF200E5D75E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7280E81E17B14AF200E5D75E /* InfoPlist.strings in Resources */,
+				7280E82417B14AF200E5D75E /* Credits.rtf in Resources */,
+				7280E82A17B14AF200E5D75E /* MainMenu.xib in Resources */,
+				7280E85317B14E1F00E5D75E /* PreferencesWindow.xib in Resources */,
+				7280E85A17B1551D00E5D75E /* MASPreferencesWindow.xib in Resources */,
+				7280E86117B1560B00E5D75E /* ConnectPreferencesView.xib in Resources */,
+				72124AC317B213EB003F69BE /* LightsPreferencesView.xib in Resources */,
+				726C4EB617B2BA5100ACE318 /* Icons.iconset in Resources */,
+				726C4EB717B2BA5100ACE318 /* StatusBarIcon.png in Resources */,
+				726C4EB817B2BA5100ACE318 /* StatusBarIcon@2x.png in Resources */,
+				726C4EBB17B2BD1100ACE318 /* StatusBarIconHighlighted.png in Resources */,
+				726C4EBC17B2BD1100ACE318 /* StatusBarIconHighlighted@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B4A0DECC66546A9A5EDC825 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FF8CC28C0A41BAA493523C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7280E80C17B14AF200E5D75E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7280E82017B14AF200E5D75E /* main.m in Sources */,
+				7280E83417B14B3000E5D75E /* AppDelegate.m in Sources */,
+				7280E84717B14C1A00E5D75E /* DPHue.m in Sources */,
+				7280E84817B14C1A00E5D75E /* DPHueDiscover.m in Sources */,
+				7280E84917B14C1A00E5D75E /* DPHueLight.m in Sources */,
+				7280E84A17B14C1A00E5D75E /* DPHueNUPNP.m in Sources */,
+				7280E84B17B14C1A00E5D75E /* DPJSONConnection.m in Sources */,
+				7280E84C17B14C1A00E5D75E /* NSString+MD5.m in Sources */,
+				7280E85017B14DEA00E5D75E /* PreferencesWindowController.m in Sources */,
+				7280E85B17B1551D00E5D75E /* MASPreferencesWindowController.m in Sources */,
+				7280E85E17B1557800E5D75E /* ConnectPreferencesViewController.m in Sources */,
+				7280E86717B1610200E5D75E /* GVUserDefaults+Settings.m in Sources */,
+				72CDEEA217B16B18006EC2DE /* ColorCalculator.m in Sources */,
+				72CDEEA917B170EA006EC2DE /* LoadArtworkOperation.m in Sources */,
+				72CDEEAD17B17102006EC2DE /* SLColorArt.m in Sources */,
+				72124AC017B213DC003F69BE /* LightsPreferencesViewController.m in Sources */,
+				72124ACB17B218D9003F69BE /* LightCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72124AC117B213EB003F69BE /* LightsPreferencesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72124AC217B213EB003F69BE /* en */,
+			);
+			name = LightsPreferencesView.xib;
+			sourceTree = "<group>";
+		};
+		7280E81C17B14AF200E5D75E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7280E81D17B14AF200E5D75E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7280E82217B14AF200E5D75E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7280E82317B14AF200E5D75E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7280E82817B14AF200E5D75E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7280E82917B14AF200E5D75E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7280E85117B14E1F00E5D75E /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7280E85217B14E1F00E5D75E /* en */,
+			);
+			name = PreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		7280E85F17B1560B00E5D75E /* ConnectPreferencesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7280E86017B1560B00E5D75E /* en */,
+			);
+			name = ConnectPreferencesView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7280E82B17B14AF200E5D75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7280E82C17B14AF200E5D75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7280E82E17B14AF200E5D75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856F6AEA51E40FD8B892375 /* Pods/Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColoredTunes/ColoredTunes-Prefix.pch";
+				INFOPLIST_FILE = "ColoredTunes/ColoredTunes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7280E82F17B14AF200E5D75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856F6AEA51E40FD8B892375 /* Pods/Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColoredTunes/ColoredTunes-Prefix.pch";
+				INFOPLIST_FILE = "ColoredTunes/ColoredTunes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7280E80B17B14AF200E5D75E /* Build configuration list for PBXProject "ColoredTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7280E82B17B14AF200E5D75E /* Debug */,
+				7280E82C17B14AF200E5D75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7280E82D17B14AF200E5D75E /* Build configuration list for PBXNativeTarget "ColoredTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7280E82E17B14AF200E5D75E /* Debug */,
+				7280E82F17B14AF200E5D75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7280E80817B14AF200E5D75E /* Project object */;
+}
