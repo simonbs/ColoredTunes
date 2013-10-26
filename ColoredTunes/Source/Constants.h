@@ -14,4 +14,5 @@ enum {
     kColorPrimary,
     kColorSecondary,
     kColorDetails,
+    kColorRandom,
 };

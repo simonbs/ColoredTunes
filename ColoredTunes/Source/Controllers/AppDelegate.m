@@ -19,6 +19,8 @@
 #define kTweetbotAppBundleId "com.tapbots.TweetbotMac" // osascript -e 'id of app "Tweetbot"'
 #define kSpotifyBundleIdentifier @"com.spotify.client"
 
+#define kAmountOfColorTypes 4 // Amount of different color types (excluding random) That is: primary, secondary, background and details (€)
+
 @interface AppDelegate ()
 @property (nonatomic, strong) NSStatusItem *statusItem;
 @property (nonatomic, strong) PreferencesWindowController *settingsController;
@@ -160,23 +162,7 @@
                 }
                 
                 NSInteger lightColorValue = [[lightColors objectForKey:lightKey] integerValue];
-                NSColor *color = nil;
-                switch (lightColorValue) {
-                    case kColorBackground:
-                        color = colorArt.backgroundColor;
-                        break;
-                    case kColorPrimary:
-                        color = colorArt.primaryColor;
-                        break;
-                    case kColorSecondary:
-                        color = colorArt.secondaryColor;
-                        break;
-                    case kColorDetails:
-                        color = colorArt.detailColor;
-                        break;
-                    default:
-                        break;
-                }
+                NSColor *color = [self colorForLightColorValue:lightColorValue inColorArt:colorArt];
 
                 // Convert color
                 NSPoint xy;
@@ -204,6 +190,34 @@
             NSLog(@"Failed reading hue: %@", error);
         }
     }];
+}
+
+- (NSColor *)colorForLightColorValue:(NSInteger)lightColorValue inColorArt:(SLColorArt *)colorArt
+{
+    NSColor *color = nil;
+    if (lightColorValue == kColorBackground)
+    {
+        color = colorArt.backgroundColor;
+    }
+    else if (lightColorValue == kColorPrimary)
+    {
+        color = colorArt.primaryColor;
+    }
+    else if (lightColorValue == kColorSecondary)
+    {
+        color = colorArt.secondaryColor;
+    }
+    else if (lightColorValue == kColorDetails)
+    {
+        return colorArt.detailColor;
+    }
+    else if (lightColorValue == kColorRandom)
+    {
+        NSInteger random = arc4random_uniform(kAmountOfColorTypes); // Random number between 0 and 3
+        color = [self colorForLightColorValue:random inColorArt:colorArt];
+    }
+    
+    return color;
 }
 
 - (void)quitApp:(id)sender

@@ -17,6 +17,7 @@ enum {
     kColorButtonIndexPrimary,
     kColorButtonIndexSecondary,
     kColorButtonIndexDetails,
+    kColorButtonIndexRandom,
 };
 
 #define kTableViewLightCellIdentifier @"LightCell"
@@ -76,6 +77,9 @@ enum {
             break;
         case kColorButtonIndexDetails:
             [lightColors setValue:@(kColorDetails) forKey:lightKey];
+            break;
+        case kColorButtonIndexRandom:
+            [lightColors setValue:@(kColorRandom) forKey:lightKey];
             break;
         default:
             break;
